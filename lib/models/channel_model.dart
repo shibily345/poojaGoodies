@@ -1,4 +1,4 @@
-import 'package:youtube_explode_dart/youtube_explode_dart.dart';
+import 'video_model.dart';
 
 class Channel {
   final String id;
@@ -10,13 +10,13 @@ class Channel {
   List<Video> videos;
 
   Channel({
+    required this.videos,
     required this.id,
     required this.title,
     required this.profilePictureUrl,
     required this.subscriberCount,
     required this.videoCount,
     required this.uploadPlaylistId,
-    required this.videos,
   });
 
   factory Channel.fromMap(Map<String, dynamic> map) {

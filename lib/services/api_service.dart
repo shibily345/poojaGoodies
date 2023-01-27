@@ -36,9 +36,9 @@ class APIService {
       Channel channel = Channel.fromMap(data);
 
       // Fetch first batch of videos from uploads playlist
-      // channel.videos = await fetchVideosFromPlaylist(
-      //   playlistId: channel.uploadPlaylistId,
-      // );
+      channel.videos = await fetchVideosFromPlaylist(
+        playlistId: channel.uploadPlaylistId,
+      );
       return channel;
     } else {
       throw json.decode(response.body)['error']['message'];
@@ -72,11 +72,11 @@ class APIService {
 
       // Fetch first eight videos from uploads playlist
       List<Video> videos = [];
-      videosJson.forEach(
-        (json) => videos.add(
+      for (var json in videosJson) {
+        videos.add(
           Video.fromMap(json['snippet']),
-        ),
-      );
+        );
+      }
       return videos;
     } else {
       throw json.decode(response.body)['error']['message'];

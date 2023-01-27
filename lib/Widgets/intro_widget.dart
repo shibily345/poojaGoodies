@@ -29,7 +29,7 @@ Widget loginPageWidget() {
           width: 60,
         ),
         SvgPicture.asset(
-          'assets/logoname.svg',
+          'assets/namelogo.svg',
           width: 200,
         ),
       ],

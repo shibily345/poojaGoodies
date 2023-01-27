@@ -32,19 +32,25 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.2.4
   firebase_core: ^2.4.1
+  firebase_database: ^10.0.9
+  firebase_storage: ^11.0.10
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.11.0
   flutter_svg: ^1.1.6
   get: ^4.6.5
   google_fonts: ^3.0.1
   google_sign_in: ^5.4.3
   http: ^0.13.5
+  icons_plus: ^3.0.0
   lottie: ^2.2.0
+  shared_preferences: ^2.0.17
   youtube_player_flutter: ^8.1.2
-  youtube_explode_dart: ^1.12.3
-  firebase_database: ^10.0.9
-  firebase_storage: ^11.0.10
-  
+flutter_icons:
+  android: true
+
+  image_path: "assets/logo.png"
+
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+const orenge = Colors.orange;
 const bgc = Color.fromARGB(255, 255, 190, 120);
 const bigspace = SizedBox(
   height: 30,
